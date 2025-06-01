@@ -5,6 +5,7 @@ import { ANIMATIONS } from '../../constants/animations';
 import { motion } from 'motion/react';
 
 import HeroAvatar from './HeroAvatar';
+import OrganicShapes from '../Decoratives/OrganicShapes';
 
 const Hero = () => {
 	const personal = usePersonal();
@@ -14,9 +15,10 @@ const Hero = () => {
 	return (
 		<section
 			id="about"
-			className="relative pt-20 pb-32 bg-gradient-to-b from-white via-ocean-50 to-primary-50 overflow-hidden"
+			className="relative pt-20 pb-32 bg-gradient-to-b from-white via-ocean-100 to-primary-50 overflow-hidden"
 		>
-			<div className="container relative mx-auto px-4">
+			<OrganicShapes count={3} variant="background" opacity={1} />
+			<div className="container relative mx-auto px-4 z-10">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<motion.div
 						className="md:w-1/2"
