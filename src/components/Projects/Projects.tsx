@@ -2,6 +2,7 @@ import { useProjects } from '../../hooks/useContent';
 import { ANIMATIONS } from '../../constants/animations';
 import { motion } from 'motion/react';
 
+import FlowingCurves from '../Decoratives/FlowingCurves';
 import ProjectCard from './ProjectCard';
 
 const ProjectsSection = () => {
@@ -9,6 +10,7 @@ const ProjectsSection = () => {
 
 	return (
 		<section id="projects" className="relative py-20 bg-gradient-to-b from-white to-ocean-50 overflow-hidden">
+			<FlowingCurves color="rgb(20 184 166)" opacity={0.35} variant="subtle" />
 			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					variants={ANIMATIONS.projects.sectionVariants}

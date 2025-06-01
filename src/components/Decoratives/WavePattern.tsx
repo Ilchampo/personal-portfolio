@@ -37,13 +37,14 @@ const WavePattern: React.FC<WavePatternProps> = props => {
 		<div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
 			<motion.svg
 				className="absolute inset-0 w-full h-full"
-				viewBox="0 0 1200 800"
+				viewBox="0 0 100 100"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
+				preserveAspectRatio="none"
 				animate={animated ? floatingAnimation : undefined}
 			>
 				<motion.path
-					d="M0,400 Q300,350 600,400 T1200,400 V800 H0 V400Z"
+					d="M-10,60 Q25,40 50,55 Q75,70 110,50 V100 H-10 V60Z"
 					fill={color}
 					opacity={opacity * 0.5}
 					variants={animated ? waveVariants : undefined}
@@ -52,7 +53,7 @@ const WavePattern: React.FC<WavePatternProps> = props => {
 				/>
 
 				<motion.path
-					d="M0,450 Q400,380 800,450 T1200,450 V800 H0 V450Z"
+					d="M-10,70 Q33,45 67,65 Q83,80 110,60 V100 H-10 V70Z"
 					fill={color}
 					opacity={opacity * 0.7}
 					variants={animated ? waveVariants : undefined}
@@ -62,7 +63,7 @@ const WavePattern: React.FC<WavePatternProps> = props => {
 				/>
 
 				<motion.path
-					d="M0,500 Q200,460 400,500 T800,500 T1200,500 V800 H0 V500Z"
+					d="M-10,80 Q17,55 33,75 Q50,90 67,70 Q83,50 110,75 V100 H-10 V80Z"
 					fill={color}
 					opacity={opacity}
 					variants={animated ? waveVariants : undefined}

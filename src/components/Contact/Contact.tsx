@@ -3,11 +3,19 @@ import { usePersonal } from '../../hooks/useContent';
 import { ANIMATIONS } from '../../constants/animations';
 import { motion } from 'motion/react';
 
+import WavePattern from '../Decoratives/WavePattern';
+
 const ContactSection = () => {
 	const { contact } = usePersonal();
 
 	return (
 		<section id="contact" className="relative py-20 bg-gradient-to-b from-ocean-50 to-primary-50 overflow-hidden">
+			<WavePattern
+				className="absolute inset-0 w-full h-full"
+				opacity={0.12}
+				color="rgb(14 165 233)"
+				animated={false}
+			/>
 			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					className="max-w-3xl mx-auto text-center"
@@ -45,7 +53,7 @@ const ContactSection = () => {
 							</motion.a>
 							<motion.a
 								href={`mailto:${contact.email}`}
-								className="inline-flex items-center justify-center gap-2 bg-ocean-100 text-ocean-800 px-6 py-3 rounded-md font-medium hover:bg-ocean-200 transition-colors"
+								className="inline-flex items-center gap-2 bg-ocean-600 text-white px-4 py-2 rounded-md font-medium hover:bg-ocean-700 transition-colors"
 								variants={ANIMATIONS.contact.secondaryButtonVariants}
 								whileHover="hover"
 								whileTap="tap"
