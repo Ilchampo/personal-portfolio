@@ -1,0 +1,82 @@
+{
+	"personal": {
+		"name": "Pablo Beltran",
+		"position": "Full Stack Software Engineer",
+		"startYear": 2022,
+		"profilePicture": "/images/profile.jpg",
+		"curriculum": "/files/Pablo-Beltran-Full-Stack.pdf",
+		"introdution": "I'm a passionate Software Engineer from Ecuador who thrives in fast-paced environments, always striving to deliver high-quality solutions. In my free time, you can find me surfing, enjoying music, or practicing martial arts!",
+		"contact": {
+			"email": "beltranflores.juan@gmail.com",
+			"linkedIn": "https://www.linkedin.com/in/pablobeltran1405",
+			"github": "https://github.com/Ilchampo",
+			"calendly": "https://calendly.com/beltranflores-juan"
+		}
+	},
+	"experiences": [
+		{
+			"type": "work",
+			"title": "Full Stack Software Engineer",
+			"entity": "Trebol (YC W22)",
+			"startDate": "Sep 2024",
+			"endDate": "May 2025",
+			"description": "I built automation tools that saved tons of manual work—think document sorting and duplication handled with a click. I helped teams get comfy with SvelteKit by setting up smooth dev standards, and gave old code a makeover with clean, scalable practices."
+		},
+		{
+			"type": "work",
+			"title": "Full Stack Software Engineer",
+			"entity": "QS Quacquarelli Symonds (Formerly 1Mentor)",
+			"startDate": "Mar 2023",
+			"endDate": "Sep 2024",
+			"description": " I juggled backend and frontend features that made life easier for users and advisors—like exportable profiles and localized skill suggestions. I also tightened security with encrypted configs via GCP, fine-tuned frontend performance, and boosted code health with SonarCloud."
+		},
+		{
+			"type": "work",
+			"title": "Full Stack Software Engineer",
+			"entity": "RocketRez (Formerly TourOpp)",
+			"startDate": "Jun 2022",
+			"endDate": "Mar 2023",
+			"description": "I brought all messaging—SMS, email, in-app—into one clean backend endpoint at RocketRez. On the frontend, I revamped the messaging UI for a smoother, more modern feel. The result? A tighter, more user-friendly platform."
+		},
+		{
+			"type": "work",
+			"title": "Full Stack Software Engineer (Contract)",
+			"entity": "Deft (Appian Partner)",
+			"startDate": "Jan 2022",
+			"endDate": "Jun 2022",
+			"description": "I teamed up with stakeholders to design scalable databases that powered key business tools. I helped shape the system's backbone—clean ERDs, clear logic, and smart planning for long-term growth."
+		},
+		{
+			"type": "education",
+			"title": "Master in Business Intelligence & Data Analytics",
+			"entity": "Universidad de las Americas",
+			"startDate": "Mar 2025",
+			"endDate": "Expected Jun 2026",
+			"description": "I'm diving deep into data—learning how to turn raw info into smart business moves. From predictive models to sharp visualizations, the program ends with a capstone where we tackle real-world problems with real data"
+		},
+		{
+			"type": "education",
+			"title": "Bachelor in Software Engineering",
+			"entity": "Universidad de las Americas",
+			"startDate": "Mar 2019",
+			"endDate": "Jun 2023",
+			"description": "My undergrad gave me solid software chops—from architecture to agile teamwork. I led student initiatives, mentored junior devs, and earned top marks with a 9.33/10 capstone. I even placed 5th in a local tech comp with a biometric train ticketing system."
+		}
+	],
+	"projects": [
+		{
+			"image": "/images/astrotext.jpg",
+			"title": "AstroText",
+			"description": "Built an open-source Chrome extension to correct and enhance English writing for non-native speakers. Features grammar correction, tone adjustment, and lexical improvement.",
+			"skills": ["React", "Vite", "Open AI API", "Chrome Extension API"],
+			"github": "https://github.com/AstroBit-LLC/astro-text"
+		},
+		{
+			"image": "/images/llegaracasa.jpg",
+			"title": "Llegar a Casa",
+			"description": "Developed a web scraper to verify the legality of public transport vehicles. Helped over 300 users access safe transport data before shutting down the app.",
+			"skills": ["SvelteKit", "Node", "Puppeteer", "TailwindCSS", "Vercel"],
+			"github": "https://github.com/Ilchampo/llegar-a-casa"
+		}
+	]
+}
