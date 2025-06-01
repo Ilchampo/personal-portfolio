@@ -53,7 +53,7 @@ const ContactSection = () => {
 							</motion.a>
 							<motion.a
 								href={`mailto:${contact.email}`}
-								className="inline-flex items-center gap-2 bg-ocean-600 text-white px-4 py-2 rounded-md font-medium hover:bg-ocean-700 transition-colors"
+								className="inline-flex items-center justify-center gap-2 bg-ocean-600 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-600 transition-colors"
 								variants={ANIMATIONS.contact.secondaryButtonVariants}
 								whileHover="hover"
 								whileTap="tap"
