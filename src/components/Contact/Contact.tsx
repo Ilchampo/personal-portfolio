@@ -1,5 +1,7 @@
 import { CalendarIcon, MailIcon } from 'lucide-react';
 import { usePersonal } from '../../hooks/useContent';
+import { ANIMATIONS } from '../../constants/animations';
+import { motion } from 'motion/react';
 
 const ContactSection = () => {
 	const { contact } = usePersonal();
@@ -7,33 +9,53 @@ const ContactSection = () => {
 	return (
 		<section id="contact" className="relative py-20 bg-gradient-to-b from-ocean-50 to-primary-50 overflow-hidden">
 			<div className="container relative mx-auto px-4">
-				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4 text-ocean-800">
-						Let's Connect
-					</h2>
-					<p className="text-gray-600 mb-8">
-						Interested in working together? Schedule a meeting with me to discuss your project or just to
-						say hello!
-					</p>
-					<div className="flex flex-col sm:flex-row gap-6 justify-center">
-						<a
-							href={contact.calendly}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="inline-flex items-center justify-center gap-2 bg-primary-500 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-600 transition-colors"
+				<motion.div
+					className="max-w-3xl mx-auto text-center"
+					variants={ANIMATIONS.contact.sectionVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, margin: '-100px' }}
+				>
+					<motion.div variants={ANIMATIONS.contact.containerVariants}>
+						<motion.h2
+							className="text-3xl md:text-4xl font-montserrat font-bold mb-4 text-ocean-800"
+							variants={ANIMATIONS.contact.titleVariants}
 						>
-							<CalendarIcon size={20} />
-							Schedule a Meeting
-						</a>
-						<a
-							href={`mailto:${contact.email}`}
-							className="inline-flex items-center justify-center gap-2 bg-ocean-100 text-ocean-800 px-6 py-3 rounded-md font-medium hover:bg-ocean-200 transition-colors"
+							Let's Connect
+						</motion.h2>
+						<motion.p className="text-gray-600 mb-8" variants={ANIMATIONS.contact.descriptionVariants}>
+							Interested in working together? Schedule a meeting with me to discuss your project or just
+							to say hello!
+						</motion.p>
+						<motion.div
+							className="flex flex-col sm:flex-row gap-6 justify-center"
+							variants={ANIMATIONS.contact.buttonContainerVariants}
 						>
-							<MailIcon size={20} />
-							Send an Email
-						</a>
-					</div>
-				</div>
+							<motion.a
+								href={contact.calendly}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center justify-center gap-2 bg-primary-500 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-600 transition-colors"
+								variants={ANIMATIONS.contact.primaryButtonVariants}
+								whileHover="hover"
+								whileTap="tap"
+							>
+								<CalendarIcon size={20} />
+								Schedule a Meeting
+							</motion.a>
+							<motion.a
+								href={`mailto:${contact.email}`}
+								className="inline-flex items-center justify-center gap-2 bg-ocean-100 text-ocean-800 px-6 py-3 rounded-md font-medium hover:bg-ocean-200 transition-colors"
+								variants={ANIMATIONS.contact.secondaryButtonVariants}
+								whileHover="hover"
+								whileTap="tap"
+							>
+								<MailIcon size={20} />
+								Send an Email
+							</motion.a>
+						</motion.div>
+					</motion.div>
+				</motion.div>
 			</div>
 		</section>
 	);

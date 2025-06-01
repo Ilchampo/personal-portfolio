@@ -3,6 +3,8 @@ import type { Experience, ExperienceType } from '../../interfaces/content.interf
 import React from 'react';
 
 import { BookOpenIcon, BriefcaseIcon } from 'lucide-react';
+import { ANIMATIONS } from '../../constants/animations';
+import { motion } from 'motion/react';
 
 interface ExperienceCardProps {
 	experience: Experience;
@@ -16,7 +18,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = props => {
 	};
 
 	return (
-		<div className="bg-white p-6 rounded-lg shadow-sm border border-primary-100 hover:shadow-md transition-shadow">
+		<motion.div
+			className="bg-white p-6 rounded-lg shadow-sm border border-primary-100 hover:shadow-md transition-shadow cursor-pointer"
+			variants={ANIMATIONS.experience.cardVariants}
+			whileHover="hover"
+		>
 			<div className="flex items-center mb-4">
 				<div className="mr-4 p-2 bg-primary-50 rounded-full text-primary-600">
 					{renderExperienceIcon(experience.type)}
@@ -30,7 +36,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = props => {
 				{experience.startDate} - {experience.endDate}
 			</div>
 			<p className="text-gray-600">{experience.description}</p>
-		</div>
+		</motion.div>
 	);
 };
 
