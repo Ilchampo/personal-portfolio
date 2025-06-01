@@ -1,4 +1,5 @@
 import { ContentProvider } from './providers/ContentProvider';
+import { Analytics } from '@vercel/analytics/react';
 
 import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
@@ -9,6 +10,7 @@ import Projects from './components/Projects/Projects';
 function App() {
 	return (
 		<ContentProvider>
+			<Analytics />
 			<Layout>
 				<Hero />
 				<Experience />

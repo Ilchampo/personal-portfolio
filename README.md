@@ -11,6 +11,7 @@ A beautiful, responsive portfolio website built with **React**, **TypeScript**, 
 ## ✨ Features
 
 ### 🎨 **Design & UX**
+
 - **Responsive Design** - Optimized for all devices (mobile-first approach)
 - **Modern UI/UX** - Clean, professional design with subtle animations
 - **Custom Color Scheme** - Ocean-themed gradient palette
@@ -18,21 +19,24 @@ A beautiful, responsive portfolio website built with **React**, **TypeScript**, 
 - **Interactive Elements** - Hover effects and micro-interactions
 
 ### 🎭 **Animations & Decoratives**
+
 - **SVG Decoratives** - 4 custom animated background components:
-  - `WavePattern` - Flowing wave animations
-  - `FloatingBubbles` - Subtle floating bubble effects  
-  - `OrganicShapes` - Abstract blob-like shapes
-  - `FlowingCurves` - Elegant curved line patterns
+    - `WavePattern` - Flowing wave animations
+    - `FloatingBubbles` - Subtle floating bubble effects
+    - `OrganicShapes` - Abstract blob-like shapes
+    - `FlowingCurves` - Elegant curved line patterns
 - **Framer Motion** - Smooth page transitions and scroll-triggered animations
 - **Progressive Enhancement** - Graceful degradation for reduced motion preferences
 
 ### 📱 **Sections**
+
 - **Hero** - Personal introduction with call-to-action
 - **Experience** - Professional timeline with work history and education
 - **Projects** - Featured project showcase with GitHub links
 - **Contact** - Direct contact links and calendar integration
 
 ### 🛠️ **Technical Features**
+
 - **TypeScript** - Full type safety and developer experience
 - **Component Architecture** - Modular, reusable components
 - **Context API** - Centralized content management
@@ -43,21 +47,25 @@ A beautiful, responsive portfolio website built with **React**, **TypeScript**, 
 ## 🚀 Tech Stack
 
 ### **Core Technologies**
+
 - **React 19** - Latest React with modern features
 - **TypeScript** - Type-safe development
 - **Vite** - Fast build tool and dev server
 
 ### **Styling & Design**
+
 - **TailwindCSS 4.1.8** - Utility-first CSS framework
 - **Custom Design System** - Consistent spacing, colors, and typography
 - **Google Fonts** - Inter (body) + Montserrat (headings)
 
 ### **Animation & Interaction**
+
 - **Framer Motion** - Production-ready motion library
 - **Lucide React** - Beautiful icon library
 - **Custom SVG Animations** - Hand-crafted decorative elements
 
 ### **Development Tools**
+
 - **ESLint** - Code linting and quality
 - **Prettier** - Code formatting
 - **TypeScript Strict Mode** - Enhanced type checking
@@ -65,10 +73,12 @@ A beautiful, responsive portfolio website built with **React**, **TypeScript**, 
 ## 📋 Quick Start
 
 ### **Prerequisites**
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### **Installation**
+
 ```bash
 # Clone the repository
 git clone https://github.com/Ilchampo/personal-portfolio.git
@@ -88,6 +98,7 @@ npm run preview
 ```
 
 ### **Development Commands**
+
 ```bash
 npm run dev      # Start dev server
 npm run build    # Build for production
@@ -98,25 +109,29 @@ npm run format   # Format code with Prettier
 ## 🎯 Customization Guide
 
 ### **1. Personal Information**
+
 Edit `content.json` to update:
+
 ```json
 {
-  "personal": {
-    "name": "Your Name",
-    "position": "Your Title", 
-    "profilePicture": "/images/your-photo.jpg",
-    "introdution": "Your bio...",
-    "contact": {
-      "email": "your@email.com",
-      "linkedIn": "https://linkedin.com/in/yourprofile",
-      "github": "https://github.com/yourusername"
-    }
-  }
+	"personal": {
+		"name": "Your Name",
+		"position": "Your Title",
+		"profilePicture": "/images/your-photo.jpg",
+		"introdution": "Your bio...",
+		"contact": {
+			"email": "your@email.com",
+			"linkedIn": "https://linkedin.com/in/yourprofile",
+			"github": "https://github.com/yourusername"
+		}
+	}
 }
 ```
 
 ### **2. Experience & Projects**
+
 Update the `experiences` and `projects` arrays in `content.json`:
+
 ```json
 {
   "experiences": [...],
@@ -125,19 +140,24 @@ Update the `experiences` and `projects` arrays in `content.json`:
 ```
 
 ### **3. Colors & Branding**
+
 Modify the color palette in `src/index.css`:
+
 ```css
---color-primary-500: #14b8a6;  /* Your brand color */
---color-ocean-500: #0ea5e9;    /* Accent color */
+--color-primary-500: #14b8a6; /* Your brand color */
+--color-ocean-500: #0ea5e9; /* Accent color */
 ```
 
 ### **4. Images & Assets**
+
 - Add your profile photo to `public/images/`
 - Update favicon in `public/`
 - Add project images to `public/images/`
 
 ### **5. Decorative Elements**
+
 Customize animations in each section:
+
 ```tsx
 <WavePattern opacity={0.1} color="rgb(14 165 233)" />
 <FloatingBubbles count={8} color="rgb(20 184 166)" />
@@ -152,7 +172,7 @@ src/
 ├── components/
 │   ├── Decoratives/        # SVG decorative components
 │   ├── Experience/         # Experience section
-│   ├── Hero/              # Hero section  
+│   ├── Hero/              # Hero section
 │   ├── Projects/          # Projects section
 │   ├── Contact/           # Contact section
 │   └── Layout/            # Layout components
@@ -167,17 +187,20 @@ src/
 ## 🎨 Design System
 
 ### **Colors**
+
 - **Primary**: Teal variations (`#14b8a6`)
-- **Ocean**: Blue variations (`#0ea5e9`) 
+- **Ocean**: Blue variations (`#0ea5e9`)
 - **Background**: Gradient combinations
 - **Text**: Gray scale for optimal contrast
 
 ### **Typography**
+
 - **Headings**: Montserrat (600-800 weight)
 - **Body**: Inter (300-600 weight)
 - **Responsive**: Fluid typography scaling
 
 ### **Spacing**
+
 - **Consistent spacing scale** using Tailwind's system
 - **Container max-width** with responsive padding
 - **Vertical rhythm** maintained throughout
@@ -185,18 +208,21 @@ src/
 ## 🚀 Deployment
 
 ### **Vercel (Recommended)**
+
 ```bash
 npm install -g vercel
 vercel --prod
 ```
 
 ### **Netlify**
+
 ```bash
 npm run build
 # Upload dist/ folder to Netlify
 ```
 
 ### **GitHub Pages**
+
 ```bash
 npm run build
 # Deploy dist/ folder to gh-pages branch
