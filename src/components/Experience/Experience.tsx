@@ -4,6 +4,8 @@ import { ANIMATIONS } from '../../constants/animations';
 import { motion } from 'motion/react';
 
 import ExperienceCard from './ExperienceCard';
+import FloatingBubbles from '../Decoratives/FloatingBubbles';
+import OrganicShapes from '../Decoratives/OrganicShapes';
 
 const Experience = () => {
 	const { personal, experiences } = useContent();
@@ -13,7 +15,13 @@ const Experience = () => {
 	};
 
 	return (
-		<section id="experience" className="relative py-20 bg-gradient-to-b from-primary-50 to-white overflow-hidden">
+		<section
+			id="experience"
+			className="relative py-20 bg-gradient-to-b from-primary-50 via-ocean-50 to-white overflow-hidden"
+		>
+			<FloatingBubbles count={6} color="rgb(14 165 233)" animated={true} />
+			<OrganicShapes count={2} variant="background" opacity={0.45} animated={true} />
+
 			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12"

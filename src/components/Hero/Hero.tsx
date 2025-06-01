@@ -15,7 +15,7 @@ const Hero = () => {
 	return (
 		<section
 			id="about"
-			className="relative pt-20 pb-32 bg-gradient-to-b from-white via-ocean-50 to-primary-50 overflow-hidden"
+			className="relative pt-20 pb-32 bg-gradient-to-b from-white via-ocean-100 to-primary-50 overflow-hidden"
 		>
 			<OrganicShapes count={3} variant="background" opacity={1} />
 			<div className="container relative mx-auto px-4 z-10">
