@@ -16,7 +16,7 @@ const Hero = () => {
 			id="about"
 			className="relative pt-20 pb-32 bg-gradient-to-b from-white via-ocean-50 to-primary-50 overflow-hidden"
 		>
-			<div className="container relative mx-auto px-4">
+			<div className="container relative mx-auto px-4 z-10">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<motion.div
 						className="md:w-1/2"

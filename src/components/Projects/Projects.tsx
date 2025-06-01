@@ -9,7 +9,7 @@ const ProjectsSection = () => {
 
 	return (
 		<section id="projects" className="relative py-20 bg-gradient-to-b from-white to-ocean-50 overflow-hidden">
-			<div className="container relative mx-auto px-4">
+			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					variants={ANIMATIONS.projects.sectionVariants}
 					initial="hidden"

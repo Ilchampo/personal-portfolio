@@ -8,7 +8,7 @@ const ContactSection = () => {
 
 	return (
 		<section id="contact" className="relative py-20 bg-gradient-to-b from-ocean-50 to-primary-50 overflow-hidden">
-			<div className="container relative mx-auto px-4">
+			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					className="max-w-3xl mx-auto text-center"
 					variants={ANIMATIONS.contact.sectionVariants}

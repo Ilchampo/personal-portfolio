@@ -14,7 +14,7 @@ const Experience = () => {
 
 	return (
 		<section id="experience" className="relative py-20 bg-gradient-to-b from-primary-50 to-white overflow-hidden">
-			<div className="container relative mx-auto px-4">
+			<div className="container relative mx-auto px-4 z-10">
 				<motion.div
 					className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12"
 					variants={ANIMATIONS.experience.sectionVariants}
